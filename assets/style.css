@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    padding-left: 70px;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    background-color: #ffffff4d;
+    padding: 5px 3px;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.items a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.items a:hover{
+    color: orangered;
+}
+
+.hm{
+    background-color: #5f96e9;
+    padding: 4px 8px;
+    border-radius: 50px;
+}
+
+.navbar .hm:hover{
+    color: #fff;
+}
+
+.navbar .logo a{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.navbar .logo .zz{
+    color: orangered;
+}
+
+.navbar .logo .mm{
+    color: #5f96e9;
+}
+
+.blanc{
+    font-size: 30px;
+    color: #fff;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.blanc:hover{
+    color: orangered;
+}
+
+.home{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./Images/HomeWork.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.description{
+    padding: 30px 70px;
+    width: 60%;
+}
+
+.description p{
+    color: orangered;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.description h1{
+    color: #fff;
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.description span{
+    padding-left: 10px;
+    border-left: orangered solid 5px;
+}
+
+
+.sous .par{
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-left: 70px;
+    margin-top: 20px;
+    padding-right: 30px;
+}
+
+.sous .par span{
+    padding-left: 10px;
+    border-left: orangered 5px solid;
+}
+
+.facts{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.facts .fact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 6px;
+    background-color: #000000c2;
+    border-radius: 20px 20px 0 0;
+    width: 120px;
+}
+
+.facts .fact h2{
+    font-size: 30px;
+    color: #5f96e9;
+}
+
+.facts .fact p{
+    text-transform: capitalize;
+    color: orangered;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 30px;
+}
+
+.btn a{
+    background-color: orangered;
+    color: #ffffff;
+    border: solid orangered 1px;
+    padding: 12px 40px;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.btn a:hover{
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 800px){
+
+    .bx-menu{
+        visibility: visible;
+    }
+
+    .items{
+        flex-direction: column;
+        position: absolute;
+        right: 0%;
+        top: 15%;
+        width: 100%;
+        border-radius: 0;
+        padding: 20px 0;
+        background-color: black;
+        display: none;
+    }
+
+    .show{
+        display: flex;
+    }
+
+    .description{
+        padding: 20px;
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .home{
+        height: fit-content;
+    }
+
+    .navbar .logo a{
+        font-size: 20px;
+    }
+
+    .navbar{
+        padding: 30px 20px;
+    }
+
+    .sous .par{
+        text-align: center;
+    }
+
+    .facts{
+        justify-content: center;
+        gap: 15px;
+    }
+}
